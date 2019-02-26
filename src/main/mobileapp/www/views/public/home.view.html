@@ -1,0 +1,32 @@
+<style title="local"></style>
+<ion-view class="pane"> 
+  <ion-header-bar align-title="center" class="bar bar-positive" data-component="crn-ion-header-bar"> 
+    <div class="buttons buttons-left header-item"> 
+      <button class="button button-clear" menu-toggle="left" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-navicon"></i> </button> 
+    </div> 
+    <h1 class="title">{{'Home.view.Home' | translate }}</h1> 
+    <div class="buttons buttons-right header-item"> 
+    </div> 
+  </ion-header-bar> 
+  <ion-content class="scroll-content has-header" data-component="crn-ion-content"> 
+    <ion-item class="item dark component-holder text-center" xattr-theme="dark" xattr-text-position="text-center" data-replace="true" data-component="crn-list-item" id="crn-list-item-420249">Serviço</ion-item>
+    <label class="item item-input component-holder col-xs-12" data-component="crn-input-icon" id="crn-input-icon-132276"><i class="icon placeholder-icon ion ion-android-person"></i> <input type="text" placeholder="Nome do Cliente" ng-model="vars.clienteNome"></label>
+    <label class="item item-input component-holder col-xs-12" data-component="crn-input-icon" id="crn-input-icon64301"> <i class="icon placeholder-icon ion ion-android-options"></i> <input type="text" placeholder="Tipo do serviço" ng-model="vars.VarTipoServ"> </label>
+    <label class="item item-input component-holder col-xs-12" data-component="crn-input-icon" id="crn-input-icon92861"><i class="icon placeholder-icon ion ion-calendar"> </i> <input type="date" placeholder="Data do serviço" ng-model="vars.VarDateServ" mask="DD/MM/YYYY HH:mm:ss"> </label>
+    <textarea id="crn-textarea-650623" ng-model="vars.txt" maxlength="300" style="resize:none;" resize="none" class=" col item item-input" rows="5" placeholder="Detalhes" data-component="crn-textarea"></textarea>
+    <ion-item class="item dark text-left component-holder col-xs-12" xattr-theme="dark" xattr-text-position="text-left" data-replace="true" data-component="crn-list-item" id="crn-list-item-340995"></ion-item>
+    <button class="button-balanced button" type="submit" xattr-fullsize="" xattr-theme="button-balanced" ng-click="cronapi.client('js.blockly.auth.Print.Executar').run()" data-component="crn-button" id="crn-button-264214" xattr-type="" xattr-size=""><i class="ion ion-printer"></i> <span>Imprimir</span></button> 
+    <button class="button button-assertive" type="submit" xattr-fullsize="" xattr-theme="button-assertive" ng-click="cronapi.client('js.blockly.Limpar.Executar').run()" data-component="crn-button" id="crn-button86121" xattr-type="" xattr-size=""><i class="ion ion-trash-a"></i> <span>Limpar</span></button>
+    <div class="component-holder ng-binding ng-scope" data-component="crn-div" id="crn-div-929090" style="padding-top: 60px;"> 
+      <div class="list"> 
+      </div> 
+    </div> 
+  </ion-content> 
+</ion-view> 
+<script type="text/ng-template" id="modal18060"><ion-modal-view>
+   <ion-header-bar align-title="center" class="bar bar-positive" data-component="crn-ion-header-bar" xattr-theme="bar-positive">
+     <h1 class="title">Serviço</h1>
+   </ion-header-bar>
+  <ion-content class="scroll-content has-header" data-component="crn-ion-content">
+     <ion-item class="item dark text-left component-holder col-xs-12" xattr-theme="dark" xattr-text-position="text-left" data-replace="true" data-component="crn-list-item" id="crn-details">{{vars.clienteNome}}</ion-item><ion-item class="item dark text-left component-holder col-xs-12" xattr-theme="dark" xattr-text-position="text-left" data-replace="true" data-component="crn-list-item" id="crn-list-item60081">{{vars.VarTipoServ}}</ion-item><ion-item class="item dark text-left component-holder col-xs-12" xattr-theme="dark" xattr-text-position="text-left" data-replace="true" data-component="crn-list-item" id="crn-list-item26071">{{vars.VarDateServ}}</ion-item><ion-item class="item dark text-left component-holder col-xs-12" xattr-theme="dark" xattr-text-position="text-left" data-replace="true" data-component="crn-list-item" id="crn-list-item57411">{{vars.txt}}</ion-item><button class="button button-balanced" type="submit" xattr-fullsize="button-block" xattr-theme="button-balanced" ng-click="" data-component="crn-button" id="crn-button-387439" xattr-type=""><i class="ion ion-android-share-alt"></i> <span>Compartilhar</span></button><button class="button button-positive" type="submit" xattr-fullsize="button-block" xattr-theme="button-positive" ng-click="cronapi.client('js.blockly.VoltarHome.Executar').run()" data-component="crn-button" id="crn-button24191"><i class="ion ion-backspace"></i> <span>Voltar</span></button>  </ion-content>
+  </ion-modal-view></script>
